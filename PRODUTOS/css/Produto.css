@@ -1,0 +1,41 @@
+/* Estilos globais */
+body {
+    font-family:Helvetica, sans-serif;
+    background-color:white;
+    color:rgb(1, 21, 21);
+    margin:0;
+    padding:0;
+
+}
+
+ul {
+    padding:0;
+}
+
+/* ESTILOS DO MENU TOP / */
+header {
+    background-color:rgb(1, 21, 21);
+}
+.menutop {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+  
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  
+}
+.nav {
+    display: flex;
+    gap: 20px;  
+}
+.logoimg {
+    width: 40px;
+    
+}
