@@ -1,0 +1,217 @@
+/* Estilos globais */
+body {
+    font-family:Helvetica, sans-serif;
+    background-color:white;
+    color:rgb(1, 21, 21);
+    margin:0;
+    padding:0;
+    
+}
+
+ul {
+    padding:0;
+}
+h3 {
+    margin: 10px 0;
+    font-size: small;
+    font-weight: bold;
+    font-family: Helvetica;
+
+}
+
+.container {
+    display: flex;
+    border: none, 0 ;
+    gap: 1px;
+}
+
+
+
+/* ESTILOS DO MENU TOP / */
+header, .footer  {
+    background-color:#7fdbb6;
+    width:100%;
+    text-align: center;
+}
+.menutop{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-align: right;
+    justify-content: right;
+  
+}
+
+.logoimg {
+    width: 40px;
+    
+}
+
+.nav {
+    display: flex;
+    gap: 20px; 
+    padding:10px; 
+    justify-content: flex-end;
+}
+
+.login {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: #7fdbb6;
+    padding: 10px;
+}
+.login input {
+    padding: 5px;
+    border: none;
+    border-radius: 4px;
+}
+.nav a, .login a {
+    text-decoration: none;
+    color: oklch(72.032% 0.00687 197.662);
+    font-weight: bold;
+}
+
+/* MENU LATERAL / */
+
+.menuLateral {
+    border: 3px solid #7fdbb6;
+    padding: 20px;
+    margin: 20px;
+    background-color: #a0aec0;
+    width: 25%;
+    height: 75%;
+}
+
+
+.produtos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 2px;
+    align-items: center;
+}
+.ped  {
+    border: 3px solid #7fdbb6;
+    padding: 20px;
+    background-color: white;
+    width: 20px;
+    text-align: center;
+}
+
+.ped1 {
+    border: 3px solid #7fdbb6;
+    padding: 20px;
+    background-color: white;
+    width: 20px;
+    text-align: center;
+}
+.ped2 {
+    border: 3px solid #7fdbb6;
+    padding: 20px;
+    background-color: white;
+    width: 20px;
+    text-align: center;
+}
+.ped3 {
+    border: 3px solid #7fdbb6;
+    padding: 20px;
+    background-color: white;
+    width: 20px;
+    text-align: center;
+}
+.ped4 {
+    border: 3px solid #7fdbb6;
+    padding: 20px;
+    background-color: white;
+    width: 20px;
+    text-align: center;
+}
+.ped5 {
+    border: 3px solid #7fdbb6;
+    padding: 20px;
+    background-color: white;
+    width: 20px;
+    text-align: center;
+}
+.ped6 {
+    border: 3px solid #7fdbb6;
+    padding: 20px;
+    background-color: white;
+    width: 20px;
+    text-align: center;
+}
+.ped7 {
+    border: 3px solid #7fdbb6;
+    padding: 20px;
+    background-color: white;
+    width: 20px;
+    text-align: center;
+}
+.ped8 {
+    border: 3px solid #7fdbb6;
+    padding: 20px;
+    background-color: white;
+    width: 20px;
+    text-align: center;
+}
+.ped9 {
+    border: 3px solid #7fdbb6;
+    padding: 20px;
+    background-color: white;
+    width: 20px;
+    text-align: center;
+}
+.ped10 {
+    border: 3px solid #7fdbb6;
+    padding: 20px;
+    background-color: white;
+    width: 20px;
+    text-align: center;
+}
+.ped11 {
+    border: 3px solid #7fdbb6;
+    padding: 20px;
+    background-color: white;
+    width: 20px;
+    text-align: center;
+}
+.ped12 {
+    border: 3px solid #7fdbb6;
+    padding: 20px;
+    background-color: white;
+    width: 20px;
+    text-align: center;
+}
+.ped13 {
+    border: 3px solid #7fdbb6;
+    padding: 20px;
+    background-color: white;
+    width: 20px;
+    text-align: center;
+}
+.comprar {
+    display: flex;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #2c3e50;
+    color: rgb(1, 21, 21);
+    text-decoration: none;
+    border-radius: 4px;
+}
+.preco {
+    font-size: 18px;
+    font-weight: bold;
+    color: #e74c3c;
+}
