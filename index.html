@@ -3,38 +3,53 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PetShop Pspspsps</title>
+    <title>PetShop Amigo Fiel</title>
     <link rel="stylesheet" href="./CSS/home.css" />
+    <style>
+      /* Rolagem suave entre as seções */
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
   </head>
   <body>
     <!-- MENU COM CONTAINER INTERNO -->
     <div class="nav">
       <div class="nav-container">
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Sobre</a></li>
-          <li><a href="#">Serviços</a></li>
-          <li><a href="#">Contato</a></li>
+          <li><a href="#top">Home</a></li>
+          <li><a href="#main">Sobre</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#loja">Loja</a></li>
+          <li><a href="#contact">Contato</a></li>
         </ul>
       </div>
     </div>
 
-    <!-- SECTION TOP -->
+    <!-- SECTION TOP (HOME) -->
     <section id="top">
-      <div class="logo">
-        <div class="logo-imagem"></div>
-        <div class="top-text">
+      <!-- <div class="logo">
+        <div class="logo-imagem"></div> -->
+      <!-- <div class="top-text">
           <h1>Sobre o Petshop</h1>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
             <br />
             Inventore, voluptatum? Nihil, quas voluptates. Quisquam, voluptatum.
           </p>
+        </div> -->
+      <!-- </div> -->
+      <div class="banner">
+        <div class="banner-img">
+          <img src="IMG/banner.png" alt="Banner do petshop" />
+        </div>
+        <div class="banner-text">
+          <h6></h6>
         </div>
       </div>
     </section>
 
-    <!-- SECTION MAIN -->
+    <!-- SECTION MAIN (SOBRE) -->
     <section id="main">
       <div class="heading">
         <h1>Sobre a empresa</h1>
@@ -43,41 +58,136 @@
         </p>
       </div>
 
-      <div class="product-container">
+      <!-- GRID DE PRODUTOS (CARDS) -->
+      <div class="product-container" id="loja">
         <div class="item">
-          <h4 class="title-prod">Produto 1</h4>
-          <p class="description">Descrição do produto 1</p>
+          <div class="card-img">🐶</div>
+          <h4 class="title-prod">Ração Premium</h4>
+          <p class="description">Nutrição completa para cães adultos.</p>
+          <span class="price">R$ 79,90</span>
+          <button class="btn-card">Comprar</button>
         </div>
-
+        <!-- ... outros produtos ... -->
         <div class="item">
-          <h4 class="title-prod">Produto 2</h4>
-          <p class="description">Descrição do produto 2</p>
+          <div class="card-img">🐱</div>
+          <h4 class="title-prod">Brinquedo Interativo</h4>
+          <p class="description">Estimula a mente do seu gato.</p>
+          <span class="price">R$ 34,90</span>
+          <button class="btn-card">Comprar</button>
         </div>
-
         <div class="item">
-          <h4 class="title-prod">Produto 3</h4>
-          <p class="description">Descrição do produto 3</p>
+          <div class="card-img">🦴</div>
+          <h4 class="title-prod">Petisco Natural</h4>
+          <p class="description">Sem conservantes, 100% natural.</p>
+          <span class="price">R$ 19,90</span>
+          <button class="btn-card">Comprar</button>
         </div>
-
         <div class="item">
-          <h4 class="title-prod">Produto 4</h4>
-          <p class="description">Descrição do produto 4</p>
+          <div class="card-img">🐾</div>
+          <h4 class="title-prod">Cama Confortável</h4>
+          <p class="description">Tamanho G, lavável e antialérgica.</p>
+          <span class="price">R$ 129,90</span>
+          <button class="btn-card">Comprar</button>
         </div>
-
         <div class="item">
-          <h4 class="title-prod">Produto 5</h4>
-          <p class="description">Descrição do produto 5</p>
+          <div class="card-img">🧼</div>
+          <h4 class="title-prod">Shampoo Especial</h4>
+          <p class="description">Hipoalergênico e cheiro prolongado.</p>
+          <span class="price">R$ 29,90</span>
+          <button class="btn-card">Comprar</button>
         </div>
-
         <div class="item">
-          <h4 class="title-prod">Produto 6</h4>
-          <p class="description">Descrição do produto 6</p>
+          <div class="card-img">🎒</div>
+          <h4 class="title-prod">Mochila Transporte</h4>
+          <p class="description">Segura e arejada para pequenos pets.</p>
+          <span class="price">R$ 159,90</span>
+          <button class="btn-card">Comprar</button>
         </div>
       </div>
 
-      <div class="service-container">
-        <h3>Nossos Serviços</h3>
-        <p>Adicione aqui informações sobre os serviços do petshop.</p>
+      <!-- BOTÃO DE LINK PARA A PÁGINA DA LOJA -->
+      <div class="loja-link-container">
+        <a href="./PRODUTOS/pagProdutos.html" class="btn btn-loja"
+          >Ver toda a loja →</a
+        >
+      </div>
+
+      <!-- SEÇÃO DE SERVIÇOS COM ID PARA NAVEGAÇÃO -->
+      <div class="service-container" id="servicos">
+        <div class="service-item">
+          <div class="service-img">
+            <img src="IMG/Banho-e-Tosa-4133700223.png" alt="Banho e tosa" />
+          </div>
+          <h4 class="title-prod">Banho e Tosa</h4>
+          <p class="description">Atendimento especializado e carinhoso.</p>
+          <span class="price">R$ 89,90</span>
+          <button class="btn-card">Contratar Serviço</button>
+        </div>
+
+        <div class="service-item">
+          <div class="service-img">
+            <img
+              src="IMG/9162b755f54d9217807694bd3f45c342-veterinarian-vaccine-icon.png"
+              alt="Vacinação"
+            />
+          </div>
+          <h4 class="title-prod">Vacinação</h4>
+          <p class="description">Proteção completa para seu pet.</p>
+          <span class="price">R$ 129,90</span>
+          <button class="btn-card">Contratar Serviço</button>
+        </div>
+
+        <div class="service-item">
+          <div class="service-img">
+            <img src="IMG/Banho-e-Tosa-4133700223.png" alt="Hospedagem" />
+          </div>
+          <h4 class="title-prod">Hospedagem</h4>
+          <p class="description">Hotel para pets com conforto e segurança.</p>
+          <span class="price">R$ 159,90/dia</span>
+          <button class="btn-card">Contratar Serviço</button>
+        </div>
+      </div>
+      <div class="loja-link-container">
+        <a href="./SERVIÇOS/servicosHome.html" class="btn btn-loja"
+          >Acessar Serviços →</a
+        >
+      </div>
+    </section>
+
+    <!-- SECTION CONTATO -->
+    <section id="contact">
+      <div class="contact-container">
+        <div class="social-media">
+          <h3>Nossas redes</h3>
+          <ul>
+            <li><a href="#">📱 Instagram</a></li>
+            <li><a href="#">📘 Facebook</a></li>
+            <li><a href="#">🐦 Twitter</a></li>
+            <li><a href="#">📞 (11) 99999-9999</a></li>
+            <li><a href="#">✉️ contato@petshop.com</a></li>
+          </ul>
+        </div>
+
+        <div class="contact-form">
+          <h3>Fale conosco</h3>
+          <form action="#" method="post">
+            <label for="nome">Nome completo:</label>
+            <input type="text" id="nome" name="nome" required />
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea
+              id="mensagem"
+              name="mensagem"
+              rows="4"
+              required
+            ></textarea>
+
+            <button type="submit" class="btn-card">Enviar mensagem</button>
+          </form>
+        </div>
       </div>
     </section>
 
